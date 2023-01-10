@@ -1,0 +1,32 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+
+@font-face {
+  font-family: 'roboto';
+  src: url(./assets/fonts/Roboto-Medium.ttf);
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'roboto';
+}
+
+html{
+  font-size: .836vw;
+}
+
+
+ul{
+  list-style-type: none;
+}
+
+button{
+  outline: none;
+  border: none;
+  background: none;
+}
+
+a{
+  text-decoration: none;
+}
