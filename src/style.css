@@ -16,6 +16,10 @@ html{
   font-size: .836vw;
 }
 
+body{
+  background: #E5E5E5;
+}
+
 
 ul{
   list-style-type: none;

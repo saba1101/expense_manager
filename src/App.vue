@@ -3,6 +3,7 @@ import globalData from "@/scripts/data.js"
 import Sidebar from "@/components/Layout/Sidebar.vue"
 import Balance from '@/components/Preview/Balance.vue'
 import Card from '@/components/Preview/Card.vue'
+import SpendChart from '@/components/Preview/SpendChart.vue'
 
 const global = globalData()
 </script>
@@ -17,6 +18,7 @@ const global = globalData()
     <div class="preview_placeholder">
       <Balance  style="margin: 25px 25px; width: 424px"/>
       <Card :balance="'552.00'" style="margin: 25px 25px; width: 424px" />
+      <SpendChart style="margin: 25px 25px;"/>
     </div>
     <div class="content_placeholder">
 
