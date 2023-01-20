@@ -192,7 +192,7 @@ const DaysCharge = ref([
                     .dynamic-bar{
                         width: 1.9375rem;
                         background: #4807EA;
-                        border-radius: 5px;
+                        border-radius: 0.3125rem;
                         margin-bottom: 0.625rem;
                     }
                 }

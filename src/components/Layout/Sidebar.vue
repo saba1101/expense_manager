@@ -6,6 +6,12 @@ const props = defineProps({
     }
 })
 
+const logout = () => {
+    const userTags = ['userName','userCardTheme','userAvatar']
+    userTags.forEach(el => window.localStorage.removeItem(el))
+    window.location.reload()
+}
+
 </script>
 
 <template>
@@ -25,7 +31,7 @@ const props = defineProps({
                 </div>
             </li>
         </ul>
-        <div class="logout">
+        <div class="logout" @click="logout">
             <img src="@/assets/icons/sidebar/logout.svg" alt="">
         </div>
     </div>
@@ -37,6 +43,7 @@ const props = defineProps({
     height: 100%;
     background: #FFFBF3;
     position: relative;
+    border-right: 0.0625rem solid rgba(#3d3d3d,.2);
     .logo{
         padding: 1.3125rem 1.25rem;
         @include centerItem();

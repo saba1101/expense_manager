@@ -63,14 +63,14 @@ const props = defineProps({
 
         .detail{
             margin-left: 0.9375rem;
-            @include flex(flex-start,center,column);
+            @include flex(flex-start,flex-start,column);
             .balance-amount{
                 font-size: 2.25rem;
                 color: #130F26;
                 font-weight: 43.75rem;
             }
             .total-expense{
-                margin-top: 5px;
+                margin-top: 0.3125rem;
                 font-size: 1rem;
             }
 
