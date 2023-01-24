@@ -9,7 +9,7 @@ const props = defineProps({
 })
 const getImgSrc = (key) => {
     let imgObj = props.data.filter(el => el.key === key)[0].src
-    let url = new URL('../../assets/icons/quickactions/' + imgObj + '.svg',import.meta.url).href
+    let url = new URL('/src/assets/icons/quickactions/' + imgObj + '.svg',import.meta.url).href
     return url
 }
 

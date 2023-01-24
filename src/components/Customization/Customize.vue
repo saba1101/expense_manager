@@ -23,7 +23,7 @@ const setConfig = (key,conf) => {
 }
 
 const getImgSrc = (src) => {
-    let url = new URL('../../assets/icons/avatars/' + src + '.png',import.meta.url).href
+    let url = new URL('/src/assets/icons/avatars/' + src + '.png',import.meta.url).href
     return url
 }
 
