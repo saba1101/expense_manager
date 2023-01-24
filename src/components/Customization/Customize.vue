@@ -170,6 +170,7 @@ const save_username = () => {
                         color: rgba(#3d3d3d,.6);
                         font-size: 0.9375rem;
                         transition: all .2s;
+                        background: #ffffff;
 
                         &.error{
                             border: 0.0625rem solid indianred;
