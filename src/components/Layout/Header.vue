@@ -1,6 +1,13 @@
 <script setup>
 import { ref } from "@vue/reactivity"
 import { onMounted, watch } from "@vue/runtime-core";
+import img1 from '@/assets/icons/avatars/1.png'
+import img2 from '@/assets/icons/avatars/2.png'
+import img3 from '@/assets/icons/avatars/3.png'
+import img4 from '@/assets/icons/avatars/4.png'
+import img5 from '@/assets/icons/avatars/5.png'
+import img6 from '@/assets/icons/avatars/6.png'
+
 
 const getImgSrc = (src) => {
     let url = new URL('/src/assets/icons/avatars/' + src + '.png',import.meta.url).href
@@ -47,7 +54,12 @@ onMounted(() => {
         </div>
         <div class="avatar">
             <div class="avatar_placeholder">
-                <img v-if="user_details.avatarKey" :src="getImgSrc(user_details.avatarKey ?? undefined)" alt="">
+                    <img v-if="user_details.avatarKey == 1 && user_details.avatarKey" :src="img1" />
+                    <img v-if="user_details.avatarKey == 2 && user_details.avatarKey " :src="img2" />
+                    <img v-if="user_details.avatarKey == 3 && user_details.avatarKey" :src="img3" />
+                    <img v-if="user_details.avatarKey == 4 && user_details.avatarKey" :src="img4" />
+                    <img v-if="user_details.avatarKey == 5 && user_details.avatarKey" :src="img5" />
+                    <img v-if="user_details.avatarKey == 6 && user_details.avatarKey" :src="img6" />
             </div>
             <div class="username">
                 <span v-if="user_details.userName">{{ user_details.userName }}</span>
