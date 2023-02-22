@@ -9,6 +9,14 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { ref } from '@vue/reactivity';
 
+import img1 from '@/assets/icons/avatars/1.png'
+import img2 from '@/assets/icons/avatars/2.png'
+import img3 from '@/assets/icons/avatars/3.png'
+import img4 from '@/assets/icons/avatars/4.png'
+import img5 from '@/assets/icons/avatars/5.png'
+import img6 from '@/assets/icons/avatars/6.png'
+
+
 const emit = defineEmits([
     'saved'
 ])
@@ -72,7 +80,14 @@ const save_username = () => {
             </div>
             <ul class="avatar">
                 <li @click="select_avatar(a)" v-for="(a,ind) in avatars" :key="ind" :class="[{'selected':a.selected}]">
-                    <img :src="getImgSrc(a.src)" alt="">
+                    <!-- <img :src="getImgSrc(a.src)" alt=""> --> 
+                    <img v-if="a.src == 1" :src="img1" />
+                    <img v-if="a.src == 2" :src="img2" />
+                    <img v-if="a.src == 3" :src="img3" />
+                    <img v-if="a.src == 4" :src="img4" />
+                    <img v-if="a.src == 5" :src="img5" />
+                    <img v-if="a.src == 6" :src="img6" />
+
                 </li>
             </ul>
             <div class="card_theme_label">
