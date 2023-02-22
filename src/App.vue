@@ -288,6 +288,7 @@ onMounted(() => {
         ul{
           width: 100%;
           @include flex(flex-start,flex-start,column);
+          
           li{
             width: 100%;
             @include flex(flex-start,flex-start,row);
@@ -308,9 +309,14 @@ onMounted(() => {
               width: 18.75rem;
             }
             &.column_names{
+              position: sticky;
+              top: -1.25rem;
+              background: #FFC248;
+              border-top-left-radius: 0.45rem;
+              border-top-right-radius: 0.45rem;
               .col_name{
                 span{
-                  color: #9B9B9B;
+                  color: #ffffff;
                   font-size: 0.875rem;
                 }
               }

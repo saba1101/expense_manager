@@ -228,6 +228,78 @@ export default function globalData() {
                 date: '29 / 12 /2023',
                 amount: '$620',
             },
+            {
+                title: 'Home Electricity Bill',
+                status: 'Successfull',
+                date: '27 / 10 /2023',
+                amount: '$500',
+            },
+            {
+                title: 'Car Services',
+                status: 'Successfull',
+                date: '2 / 11 /2023',
+                amount: '$240',
+            },
+            {
+                title: 'Festival Shopping',
+                status: 'Successfull',
+                date: '29 / 12 /2023',
+                amount: '$620',
+            },
+            {
+                title: 'Home Electricity Bill',
+                status: 'Successfull',
+                date: '27 / 10 /2023',
+                amount: '$500',
+            },
+            {
+                title: 'Car Services',
+                status: 'Successfull',
+                date: '2 / 11 /2023',
+                amount: '$240',
+            },
+            {
+                title: 'Festival Shopping',
+                status: 'Successfull',
+                date: '29 / 12 /2023',
+                amount: '$620',
+            },
+            {
+                title: 'Home Electricity Bill',
+                status: 'Successfull',
+                date: '27 / 10 /2023',
+                amount: '$500',
+            },
+            {
+                title: 'Car Services',
+                status: 'Successfull',
+                date: '2 / 11 /2023',
+                amount: '$240',
+            },
+            {
+                title: 'Festival Shopping',
+                status: 'Successfull',
+                date: '29 / 12 /2023',
+                amount: '$620',
+            },
+            {
+                title: 'Home Electricity Bill',
+                status: 'Successfull',
+                date: '27 / 10 /2023',
+                amount: '$500',
+            },
+            {
+                title: 'Car Services',
+                status: 'Successfull',
+                date: '2 / 11 /2023',
+                amount: '$240',
+            },
+            {
+                title: 'Festival Shopping',
+                status: 'Successfull',
+                date: '29 / 12 /2023',
+                amount: '$620',
+            },
         ]
     })
     return{
