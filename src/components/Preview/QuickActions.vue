@@ -1,5 +1,15 @@
 <script setup>
 import { nextTick } from "@vue/runtime-core"
+import category from '@/assets/icons/quickactions/category.svg'
+import car from '@/assets/icons/quickactions/car.svg'
+import security from '@/assets/icons/quickactions/security.svg'
+import video from '@/assets/icons/quickactions/video.svg'
+import games from '@/assets/icons/quickactions/games.svg'
+import docs from '@/assets/icons/quickactions/docs.svg'
+import shop from '@/assets/icons/quickactions/shop.svg'
+import travel from '@/assets/icons/quickactions/travel.svg'
+import service from '@/assets/icons/quickactions/service.svg'
+
 
 const props = defineProps({
     data: {
@@ -7,6 +17,7 @@ const props = defineProps({
         default: [],
     }
 })
+
 const getImgSrc = (key) => {
     let imgObj = props.data.filter(el => el.key === key)[0].src
     let url = new URL('/src/assets/icons/quickactions/' + imgObj + '.svg',import.meta.url)
@@ -34,7 +45,16 @@ const getImgSrc = (key) => {
                 :style="{background: a.hover ? a.color : ''}"
             >
                 <div class="icon">
-                    <img :src="getImgSrc(a.key)" alt="">
+                    <img v-if="a.key === 'category'" :src="category" alt="">
+                    <img v-if="a.key === 'car'" :src="car" alt="">
+                    <img v-if="a.key === 'security'" :src="security" alt="">
+                    <img v-if="a.key === 'video'" :src="video" alt="">
+                    <img v-if="a.key === 'games'" :src="games" alt="">
+                    <img v-if="a.key === 'docs'" :src="docs" alt="">
+                    <img v-if="a.key === 'shops'" :src="shop" alt="">
+                    <img v-if="a.key === 'travel'" :src="travel" alt="">
+                    <img v-if="a.key === 'service'" :src="service" alt="">
+                    <!-- <img :src="getImgSrc(a.key)" alt=""> -->
                 </div>
                 <div class="title">
                     <span>
